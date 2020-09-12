@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Basic website</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav>
+            <ul class="navbar" id="nyname">
+                <li class="hom"><a href="#home" >Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contect">Contect</a></li>
+                <li class="float-right"><a href="#signin">Sign In</a></li>
+                <li class="float-right"><a href="#signup" >Sign Up</a></li>
+                <li class="DropdownIcon"><a href="javascript:void(0);" onclick="down()">&#9776;</a></li>
+            </ul>
+        </nav>
+        <div class="container s1">
+            <div class="row">
+                <div class="col-6">
+                    <div class="leftSide">
+                        <h1 class="large">Crazy Radness</h1>
+                        <h1 class="large">Made for Devslop</h1>
+                    </div>
+                    <form>
+                        <div class="leftSide">
+                            <h2>Username</h2>
+                            <input type="text" class='username' placeholder="Username">
+                            <h2>Password</h2>
+                            <input type="text" class="password" placeholder="Password">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-6">
+                    <div class="video rightSide">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/MbA05SoRIQo" frameborder="0" 
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+             <div class="col-4">
+                 <div class="box">
+                     <div class="icon">
+                         <img src="devIcon.jfif" alt="Logo">
+                     </div>
+                     <label>Chat with Me</label>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias fuga provident, suscipit laborum quia ipsum et delectus, deserunt molestiae laudantium temporibus sint sunt libero exercitationem 
+                         dignissimos repellendus laboriosam dolor veniam! </p>
+                         <!-- by using lorem# we can cerate random text of # lenght-->
+
+                 </div>
+
+             </div>
+                <div class="col-4">
+                    <div class="box">
+                        <div class="icon">
+                            <img src="devIcon.jfif" alt="Logo">
+                        </div>
+                        <label>Learn to Code</label>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias fuga provident, suscipit laborum quia ipsum
+                             et delectus, deserunt molestiae laudantium temporibus sint sunt libero exercitationem  </p>
+                            <!-- by using lorem# we can cerate random text of # lenght-->
+                            
+                    </div>
+   
+                </div>
+                <div class="col-4">
+                    <div class="box">
+                        <div class="icon">
+                            <img src="devIcon.jfif" alt="Logo">
+                        </div>
+                        <label>Build an Empire</label>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias fuga provident, suscipit laborum quia ipsum 
+                            et delectus, deserunt molestiae laudantium temporibus sint sunt libero exercitatione</p>
+                            <!-- by using lorem# we can cerate random text of # lenght-->
+                            
+                    </div>
+   
+                </div>
+               </div>
+               <div class="row">
+                   <div class="col-12">
+                       <button class="learnMore">Learn More</button>
+                   </div>
+               </div>
+            </div>
+               <hr>
+               <div class="container row">
+                   <div class="col-7">
+                       <article>
+                           <p><!--- p tag add default margin--->
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                             Itaque a nesciunt molestiae mollitia officia facere 
+                             excepturi. Ipsa veritatis eligendi adipisci neque autem quo magnam, exercitationem iure incidunt eius nam totam distinctio nesciunt sunt voluptates porro, vitae, vero nisi dolores op
+                            tio dolorum sed.
+                        </p>
+                       </article>
+                   </div>
+                   <div class="col-5">
+                       <div class="slopeIcon">
+                           <img src="iOS-Slope.png" >
+                       </div>
+                   </div>
+               </div>
+            <footer class="foot1"><!--bigger website may contain more than 1 footer thfr class is godd-->
+                <div class="row">
+                    <div class="col-3 mobile">
+                        <h1>Company</h1><!--- h tag give display of blocks and default margin--->
+                        <ul>
+                            <li>About</li>
+                            <li>Blogs</li>
+                            <li>Careers</li>
+                        </ul>
+                    </div>
+                    <div class="col-3 mobile">
+                        <h1>Company</h1>
+                        <ul>
+                            <li>About</li>
+                            <li>Blogs</li>
+                            <li>Careers</li>
+                        </ul>
+                    </div>
+                    <div class="col-3 mobile">
+                        <h1>Company</h1>
+                        <ul>
+                            <li>About</li>
+                            <li>Blogs</li>
+                            <li>Careers</li>
+                        </ul>
+                    </div>
+                    <div class="col-3 mobile">
+                        <h1>Company</h1>
+                        <ul>
+                            <li>About</li>
+                            <li>Blogs</li>
+                            <li>Careers</li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    <script>
+        function down(){
+            // check the state of list
+            var x = document.getElementById("nyname");
+            if(x.className === "navbar")
+            {
+                x.className += " r";
+                // we change topnav to topnav.resposive
+            }
+            else{
+                x.className="navbar";
+                // to get back again 
+            }
+            // alert(x.className);
+        }
+    </script>
+    </body>
+</html>

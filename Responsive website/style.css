@@ -1,0 +1,246 @@
+/* ########## Default########## */
+nav,
+header,
+footer{
+    display:block;
+}
+body{
+    margin:0px;
+     /*as there is a default value of margin given by web bor. 8px */
+    line-height: 1; 
+}
+/*  */
+label{
+    font-size: 35px;
+    font-weight: 600;
+}
+p{
+    font-size: 28px;
+    line-height: 1.2;
+}
+article p{
+    font-size: 35px;
+    padding: 20px;/* carefully use margin in col*/
+
+}
+
+/* ########### Nav bar ############ */
+nav{
+    width: 100%;
+    margin:0px;
+    
+}
+nav ul{
+    background-color:#eee;
+    overflow: hidden; /* important*/
+    margin: 0;
+    padding: 0;
+    
+}
+nav ul li{
+    list-style-type: none;
+    margin: 0px;
+    float: left;
+} 
+nav ul .float-right{
+    float:right;
+}
+ul.navbar li a{
+    text-decoration: none;
+    display:block;
+    min-width: 16px; /* similar to font size*/
+    text-align: center;
+    padding: 12px;   
+    text-transform: uppercase;
+    color: #666;
+}
+nav .navbar li a:hover{/* :event*/
+    color:white;
+    background-color: blue;
+
+}
+ul.navbar li.DropdownIcon{
+    display: none;
+}
+/* ########## container ########### */
+.container{
+    width: 100%;
+    margin:auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    
+}
+.rightSide{
+    margin-left:7% ; 
+}
+
+/* ######## Grid ######### */
+.row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;/* it arrange the item hori which there is no size or when they start overlaping*/ 
+    align-items: center;
+}
+.row::after{
+    clear:both;
+    display: table;
+    content: "";
+}
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+
+div.box{
+    text-align: center;
+    margin:24px;
+    padding: 36px 24px 40px 24px;
+    border-radius: 7px;
+    background-color: #fff;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0,.15),
+    0 2px 3px 0 rgba(0, 0, 0,.1);
+
+}
+div.slopeIcon img{
+    display: block;
+    margin:auto;
+    box-shadow: -2px/*hori*/ -2px/* vert*/ 10px/*blur*/ 2px/*spread*/
+    rgba(0/*shadow*/,0/*bg*/,0/*box color*/, .15/*opasite*/), 
+    /*2nd shadow*/
+    2px 2px 17px 2px #000000;
+}
+
+button{
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #0069ff;
+    padding: 15px 60px;
+    display: block;
+    text-align: center;
+    margin: 5px;
+    border-radius: 7px;
+}
+button.learnMore{
+    display: block;
+    margin: auto;
+}
+
+/* ######## input tags ########## */
+input[ type="text" ]{
+    font-size: 20px;
+    width: 300px;
+    min-width: 100px;
+    padding: 5px;
+    border-radius: 13px;
+   }
+   form h2{
+       color:white;
+   }
+   /* ########## Footer ############# */
+
+   footer.foot1{
+       background-color: #666;
+       color: #fff;
+       padding-left:10%;
+   }
+   footer.foot1 h1{
+       
+       font-size: 35px;
+   }
+   footer.foot1 ul{
+       list-style: none;
+       text-align: left;
+       padding-left: 0;
+   }
+   footer.foot1 ul li{
+       font-size:22px;
+       line-height: 1.4;
+   }
+/* ############# Moblie Version ###########*/
+@media screen and (max-width: 680px){
+     ul.navbar li:not(:nth-child(1)){
+        display: none;
+    }
+    ul.navbar li.DropdownIcon{
+        display: block;
+        float: right;
+    }
+    ul.navbar.r li.DropdownIcon{
+        position: absolute;
+        top:0;
+        right: 0;
+    }
+    ul.navbar.r{
+        position: relative;
+    }
+    ul.navbar.r  li {
+        display: block;
+        float: none;
+    }
+    ul.navbar.r li a{
+        display: block;
+        text-align: left;
+    }
+    input [ type="text" ]
+    {
+        width:75%;
+    }
+    .col-6,
+    .col-4,
+    .col-7,
+    .col-5,
+    .col-3{
+        width:100%;
+    }
+    div.mobile{
+        display: block;
+        width: 50%;
+    }
+    article p{
+        font-size: 25px;
+    }
+    div.slopeIcon img{
+        width: 100%;
+    }
+    div.slopeIcon{
+        margin:10px;
+    }
+    div.box{
+        padding: 5px;
+        display: block;
+    }
+    div.leftSide,
+    div.video{
+        margin:10px;
+    }
+
+    .video iframe{
+        overflow: hidden;
+        width: 100%;
+        margin: 0;
+    }
+
+}
+/* ########## gradient ########## */
+.s1{
+    background-color: blue;
+    background: linear-gradient(#076DFF,#65a5ff);
+}
+.large{
+    color:#fff;
+    font-size:56px;
+    margin:0px;
+    line-height: 70px ;    
+}
+.leftSide{
+    margin-left:20% ;
+}
